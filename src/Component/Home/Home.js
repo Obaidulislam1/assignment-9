@@ -6,7 +6,9 @@ import Cart from '../Cart/Cart';
 
 const Home = () => {
     const topicData = useLoaderData();
-    console.log(topicData)
+    const handleClick = (id) =>{
+        
+    }
     return (
         <div>
            <BodyHeader></BodyHeader>
@@ -15,6 +17,7 @@ const Home = () => {
                     topicData.data.map(topic => <Cart
                         key={topic.id}
                         topic={topic}
+                        handleClick={handleClick}
                     ></Cart>)
                 }
             </div>
