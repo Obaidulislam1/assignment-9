@@ -20,7 +20,7 @@ const Question = ({ question }) => {
                 <h1 className='text-center font-bold text-sky-300'>Question: {question.question}</h1>
                 <EyeIcon onClick={() => ClickHandle(correctAnswer)} className="h-6 w-6 text-blue-500" />
             </div>
-            <div className='grid grid-cols-2 gap-3'>
+            <div className='grid md:grid-cols-2 gap-3'>
                 {
                     options.map(option => <Option handleClick={handleClick} key={option.id} option={option}></Option>)
                 }

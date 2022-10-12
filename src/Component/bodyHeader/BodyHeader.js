@@ -3,7 +3,7 @@ import image from '../../Image/image.jpg'
 
 const BodyHeader = () => {
     return (
-        <div className='grid grid-cols-2 m-5'>
+        <div className='grid md:grid-cols-2 m-5'>
         <img src={image} alt="" />
         <div>
             <h1 className='font-bold font-serif text-center text-xl'>International Quiz Academy</h1>

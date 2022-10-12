@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='navContaine'>
+        <div className='navContaine md:flex'>
             <div>
                 <h2 className='font-bold text-xl text-red-400'>National Quiz</h2>
             </div>

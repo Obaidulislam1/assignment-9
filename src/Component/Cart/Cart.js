@@ -6,7 +6,7 @@ const Cart = ({topic,handleClick}) => {
     const {name,logo,id} = topic;
     return (
         <div className='p-1 border-slate-200 border-2 rounded'>
-            <img className='bg-emerald-100 rounded' src={logo} alt="" />
+            <img className='bg-emerald-100 rounded w-full' src={logo} alt="" />
            <div className='flex justify-between m-1'>
            <h1 className='text-2xl '>{name}</h1>
            <Link to={`../Cart/${id}`}>

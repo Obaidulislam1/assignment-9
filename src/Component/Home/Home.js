@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
            <BodyHeader></BodyHeader>
-            <div className='grid grid-cols-4 gap-3 ml-5 mr-5'>
+            <div className='grid md:grid-cols-4 gap-3 ml-5 mr-5'>
                 {
                     topicData.data.map(topic => <Cart
                         key={topic.id}
