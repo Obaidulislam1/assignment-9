@@ -6,9 +6,9 @@ const Statistic = () => {
 const data = useLoaderData();
 const datas = data.data
     return (
-        <div className='flex justify-center items-center mt-20'>
+        <div className='flex justify-center items-center mt-20 w-100%'>
          <div>
-         <BarChart width={500} height={400} data={datas}>
+         <BarChart width={400} height={300} data={datas}>
             <XAxis dataKey="name" />
             <YAxis dataKey="total" />
             <Bar dataKey="total" barSize={30} fill="#8884d8" />
