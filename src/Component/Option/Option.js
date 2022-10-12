@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Option = ({option}) => {
+const Option = ({option,handleClick}) => {
+    console.log(option)
     return (
         <div>
             <div className='border-solid border-2 p-3 rounded'>
-         <input type="radio" name='one'/>{option}
+         <p onClick={() =>handleClick(option)}><input type="radio"/>{option}</p>
             </div>
         </div>
     );
